@@ -10,7 +10,7 @@ Daily work and research with agents need clear signal, less noise. MVA strips th
 
 ## Benchmark
 
-Averaged across 20 prompts (bugs, concept questions, commands, architecture, ambiguous asks) on `claude-sonnet-4-6`:
+Averaged across 20 prompts (bugs, concept questions, commands, architecture, ambiguous asks) on `claude-sonnet-4-5`:
 
 | mode    | avg latency | avg out tokens | avg chars | total out tokens (20 prompts) |
 |---------|-------------|----------------|-----------|-------------------------------|

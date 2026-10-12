@@ -17,9 +17,8 @@ node run.js
 ```
 
 Writes `results/<timestamp>/`:
-- `runs.jsonl` / `runs.csv` — raw records
+- `runs.jsonl` — raw records
 - `report.md` — aggregates table
-- `INDEX.md` — links to per-prompt pages
 - `prompts/<id>.md` — one file per prompt, prompt + each mode's response
 
 ## Rebuild per-prompt files without re-calling the API

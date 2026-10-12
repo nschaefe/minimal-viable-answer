@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * MVA benchmark: run prompts × 3 modes (default/caveman/mva) against any LLM endpoint.
- * Measures latency + input/output tokens. Writes JSONL + CSV + per-prompt markdown.
+ * Measures latency + input/output tokens. Writes JSONL + per-prompt markdown.
  *
  * Config via env (set in .env, loaded with `set -a; source .env; set +a`):
  *   BASE_URL      e.g. https://api.anthropic.com | https://api.openai.com | http://localhost:6655
@@ -98,14 +98,6 @@ async function callAnthropic(system, user) {
 const call = API_SHAPE === "anthropic" ? callAnthropic : callOpenAI;
 
 function writeReports(outDir, rows) {
-  const csv = [
-    "id,mode,latencyMs,inputTokens,outputTokens,chars,error",
-    ...rows.map((r) =>
-      [r.id, r.mode, r.latencyMs, r.inputTokens ?? "", r.outputTokens ?? "", r.chars, r.error ? JSON.stringify(r.error) : ""].join(","),
-    ),
-  ].join("\n");
-  fs.writeFileSync(path.join(outDir, "runs.csv"), csv);
-
   const modes = ["default", "caveman", "mva"];
   const agg = modes.map((m) => {
     const rs = rows.filter((r) => r.mode === m && !r.error);
