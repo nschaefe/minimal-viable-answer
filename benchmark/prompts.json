@@ -1,0 +1,82 @@
+[
+  {
+    "id": "p01_bug_short",
+    "prompt": "Why does `const x = arr.find(e => e.id == id).name` sometimes throw?"
+  },
+  {
+    "id": "p02_rename_cmd",
+    "prompt": "How do I rename a function across my whole repo from the terminal?"
+  },
+  {
+    "id": "p03_module_missing",
+    "prompt": "My Node app crashes on startup with `Error: Cannot find module 'express'`. What do I do?"
+  },
+  {
+    "id": "p04_sql_trailing_space",
+    "prompt": "This SQL returns 0 rows but there is data: `SELECT * FROM users WHERE name = 'Alice '`. Why?"
+  },
+  {
+    "id": "p05_git_amend_pushed",
+    "prompt": "I just did `git commit --amend` on a pushed commit. How do I recover?"
+  },
+  {
+    "id": "p06_explain_closures",
+    "prompt": "Explain JavaScript closures. I know functions and scope but closures confuse me."
+  },
+  {
+    "id": "p07_explain_eventloop",
+    "prompt": "Explain how the Node.js event loop works. What is the difference between microtasks and macrotasks?"
+  },
+  {
+    "id": "p08_explain_cap_theorem",
+    "prompt": "What is the CAP theorem and why can't a distributed system have all three?"
+  },
+  {
+    "id": "p09_explain_oauth_vs_jwt",
+    "prompt": "What is the difference between OAuth2 and JWT? People use them together but they feel like the same thing."
+  },
+  {
+    "id": "p10_explain_tcp_vs_udp",
+    "prompt": "When should I pick UDP over TCP?"
+  },
+  {
+    "id": "p11_regex_email",
+    "prompt": "Write a regex that matches an email address."
+  },
+  {
+    "id": "p12_choice_db",
+    "prompt": "Should I use Postgres or MongoDB for a small analytics dashboard?"
+  },
+  {
+    "id": "p13_ambiguous_slow_tests",
+    "prompt": "My tests are slow. Help."
+  },
+  {
+    "id": "p14_react_rerender",
+    "prompt": "I have a React component that re-renders on every keystroke even though the parent state did not change. The child receives `{ user, config, onSave }` as props. `user` and `config` are objects, `onSave` is a function. All three come from a parent component that reads from a Redux store. What is the most likely cause?"
+  },
+  {
+    "id": "p15_write_code",
+    "prompt": "Write a Python function that takes a list of integers and returns the two numbers that sum to a target. Return None if no pair exists."
+  },
+  {
+    "id": "p16_debug_mystery",
+    "prompt": "My cron job runs fine when I invoke the script manually but silently does nothing when cron runs it. Where do I even start?"
+  },
+  {
+    "id": "p17_concept_idempotent",
+    "prompt": "What does it mean for an HTTP endpoint to be idempotent? Give an example of one that is and one that isn't."
+  },
+  {
+    "id": "p18_perf_question",
+    "prompt": "I have a list of 10 million strings and I need to check if a given string is in it. What is the fastest approach in Python?"
+  },
+  {
+    "id": "p19_architecture",
+    "prompt": "I want to add a feature flag system to a Node service. Should I build my own or use a library? If library, which one and why?"
+  },
+  {
+    "id": "p20_open_ended",
+    "prompt": "I inherited a legacy codebase with no tests, 200k lines, and I need to add a new feature next week without breaking anything. What is your plan?"
+  }
+]
